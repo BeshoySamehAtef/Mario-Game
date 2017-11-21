@@ -1,0 +1,174 @@
+/*// BASE STYLES //*/
+
+html, body{
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+#score {
+    left : 30px;
+    top : 30px;
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+    position: absolute;
+    text-align: center;
+    padding: 10px 10px;
+    z-index: 50;
+}
+
+.grass, .sky, .road{
+  position: relative;
+}
+
+.sky{
+  height: 50%;
+  background: skyblue;
+}
+
+.grass{
+  height: 20%;
+  background: seagreen;
+}
+
+.road{
+  height: 30%;
+  background: dimgrey;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+
+.enemy {
+    
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    transform: rotateY(180deg);
+    animation: movingenemy 4s linear infinite both reverse  ;
+    
+}
+
+
+
+/*// ELEMENTS TO ANIMATE //*/
+
+.mario {
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    
+    animation: moving 4s linear infinite both  ;
+    
+}
+
+.mario.jumpingup {
+    animation: moving 4s linear infinite both , jumping 0.5s linear  ;
+}
+
+
+@keyframes movingenemy {
+    0% {transform: translateX(-300px) rotateY(180deg)}
+    100% {transform: translateX(1500px) rotateY(180deg)}
+}
+
+@keyframes moving {
+    0% {transform: translateX(-300px)}
+    100% {transform: translateX(1500px)}
+}
+
+
+
+@keyframes jumping {
+    0% {top:-60px}
+    50% {top:-120px}
+    100% {top:-60px}
+    
+}
+
+
+.lamp1 {
+    position: absolute;
+    height: 150px;
+    top :-80px;
+    animation: lineA 5s linear both infinite 1s;
+}
+
+.lamp2 {
+    position: absolute;
+    height: 150px;
+    top :-80px;
+    animation: lineA 5s linear both infinite 2.5s;
+}
+
+.lamp3 {
+    position: absolute;
+    height: 150px;
+    top :-80px;
+    animation: lineA 5s linear both infinite 3.5s;
+}
+
+
+
+
+.cloud {
+    position: absolute;
+    
+}
+
+.cloud:nth-child(1) {
+    width: 200px;
+    top: 120px;
+    opacity: 0.5;
+    animation: cloudWind 30s infinite reverse both linear ;
+}
+
+.cloud:nth-child(2) {
+    width: 300px;
+    animation: cloudWind 25s infinite reverse both linear ;
+}
+
+/*// KEYFRAMES //*/
+
+@keyframes moving {
+    0% {transform: translateX(-300px)}
+    100% {transform: translateX(1400px)}
+}
+
+@keyframes lineA {
+    0%{transform: translateX(1300px)}
+    
+   
+    100% {transform: translateX(-400px)}
+    
+}
+
+
+@keyframes movingLines {
+    0% {transform: translateX(-300px)}
+    100% {transform: translateX(1400px)}
+}
+
+
+
+@keyframes cloudWind {
+    0% {transform: translate(-200px)}
+    100% {transform: translateX(1200px)}
+}
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <title>Mario Kart Animations</title>
+    <script src="jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="score">Avoid Luigi by Clicking UP Arrow</div>
+  <div class="sky">
+   <img class="cloud" src="img/cloud.png">
+    <img class="cloud" src="img/cloud.png">
+      
+    </div>
+  <div class="grass">
+    <img class="lamp1" src="img/lamp.png">
+      <img class="lamp2" src="img/lamp.png">
+      <img class="lamp3" src="img/lamp.png">
+    </div>
+  <div class="road">
+    <div class="mario"><img src="img/mario.png"></div>
+      <div class="enemy"><img src="img/mario.png"></div>
+    
+  </div>
+    
+    <script>
+   
+        
+      $(function () {
+    // those are the position and offset before animation was attached
+    
+    // those are declarations for vars which will store the position and offset
+    // of the element right after attaching the animation, and will result in the values
+    // of the first fram of the animation
+   
+    // this is a timer function to write the details on the status bar
+    setInterval(function () {
+        // those are the position and offset of the element during the animation
+        var apX = $(".mario").position().left;
+        var apY = $(".mario").position().top;
+        
+        var aoeX = Math.ceil($(".enemy").offset().left);
+        var aoeY = Math.ceil($(".enemy").offset().top);
+        
+        var aoX = Math.ceil($(".mario").offset().left);
+        var aoY = Math.ceil($(".mario").offset().top);
+        //print status bar info
+       console.log (aoX +" "+ aoeX +" "+aoY+" "+aoeY);
+        if(aoX>=aoeX && aoX<=aoeX+100 && aoY==aoeY){
+           alert("game over , ur score is :"+ d);
+            d=0;
+
+       }
+    }, 100);
+          
+          
+               var myVar = setInterval(myscore, 1000);
+                var d = 5;
+                function myscore() {
+                 d +=5;
+                document.getElementById("score").innerHTML = d;
+            }
+
+          
+          
+    $(document).keydown(function(e){
+    if (e.keyCode == 38) { 
+       $('.mario').addClass('jumpingup');
+        $(document).keyup(function(){
+            $('.mario').removeClass('jumpingup',1000);
+            return false;        
+        })
+    } 
+            
+});
+    //attach the animation class to the slider div 
+   
+    //record the changed (will result in the first animation frame)
+    
+});
+    
+    </script>
+    
+    
+</body>

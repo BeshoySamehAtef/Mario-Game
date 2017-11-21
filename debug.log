@@ -1,0 +1,23 @@
+[0620/193302.422:ERROR:crash_report_database_win.cc(426)] unexpected header
+[0620/194302.423:ERROR:crash_report_database_win.cc(426)] unexpected header
+[0620/194302.444:ERROR:crash_report_database_win.cc(426)] unexpected header
+[0620/194802.449:ERROR:crash_report_database_win.cc(426)] unexpected header
+[0626/183640.488:ERROR:process_info.cc(631)] range at 0x7f12303000000000, size 0x1c1 fully unreadable
+[0626/183640.489:ERROR:process_info.cc(631)] range at 0x7f12309200000000, size 0x1c1 fully unreadable
+[0626/183640.489:ERROR:process_info.cc(631)] range at 0x0, size 0x1c1 fully unreadable
+[0626/183805.395:ERROR:process_info.cc(631)] range at 0x9284303000000000, size 0x207 fully unreadable
+[0626/183805.395:ERROR:process_info.cc(631)] range at 0x9284309200000000, size 0x207 fully unreadable
+[0626/183805.402:ERROR:process_info.cc(631)] range at 0x0, size 0x207 fully unreadable
+[0626/184210.540:ERROR:process_info.cc(631)] range at 0x8fe2303000000000, size 0x193 fully unreadable
+[0626/184210.540:ERROR:process_info.cc(631)] range at 0x8fe2309200000000, size 0x193 fully unreadable
+[0626/184210.540:ERROR:process_info.cc(631)] range at 0x0, size 0x193 fully unreadable
+[0626/184408.700:ERROR:process_info.cc(631)] range at 0x9b16303000000000, size 0x214 fully unreadable
+[0626/184408.724:ERROR:process_info.cc(631)] range at 0x9b16309200000000, size 0x214 fully unreadable
+[0626/184408.724:ERROR:process_info.cc(631)] range at 0x0, size 0x214 fully unreadable
+[0626/221904.983:ERROR:process_info.cc(631)] range at 0xf3e1310000000000, size 0x1a3 fully unreadable
+[0626/221905.012:ERROR:process_info.cc(631)] range at 0xf3e1316200000000, size 0x1a3 fully unreadable
+[0626/221905.012:ERROR:process_info.cc(631)] range at 0x0, size 0x1a3 fully unreadable
+[0626/221907.409:ERROR:http_transport_win.cc(267)] WinHttpSendRequest: The server name or address could not be resolved  (0x2ee7)
+[0626/222032.309:ERROR:process_info.cc(631)] range at 0xfd03310000000000, size 0x1dc fully unreadable
+[0626/222032.309:ERROR:process_info.cc(631)] range at 0xfd03316200000000, size 0x1dc fully unreadable
+[0626/222032.309:ERROR:process_info.cc(631)] range at 0x0, size 0x1dc fully unreadable
